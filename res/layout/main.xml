@@ -2,33 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
+    android:layout_height="fill_parent">
 
-<ImageButton android:id="@+id/ImageButtonRed" 
-	android:layout_width="wrap_content" 
+<Button android:id="@+id/ButtonRed" 
+	android:layout_width="75dp" 
+	android:layout_height="wrap_content"
+	android:textColorHighlight="@color/red">
+</Button>
+
+<Button android:id="@+id/ButtonBlue" 
+	android:layout_width="75dp" 
 	android:layout_height="wrap_content">
-</ImageButton>
+</Button>
 
-<ImageButton android:id="@+id/ImageButtonBlue" 
-	android:layout_width="wrap_content" 
+<Button android:id="@+id/ButtonYellow" 
+	android:layout_width="75dp" 
 	android:layout_height="wrap_content">
-</ImageButton>
+</Button>
 
-<ImageButton android:id="@+id/ImageButtonYellow" 
-	android:layout_width="wrap_content" 
+<Button android:id="@+id/ButtonGreen" 
+	android:layout_width="75dp" 
 	android:layout_height="wrap_content">
-</ImageButton>
+</Button>
 
-<ImageButton android:id="@+id/ImageButtonGreen" 
-	android:layout_width="wrap_content" 
-	android:layout_height="wrap_content">
-</ImageButton>
-
-<TextView  
+<TextView
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+    android:text="@string/hello"/>
     
 </LinearLayout>

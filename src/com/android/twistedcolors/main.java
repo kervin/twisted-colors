@@ -1,5 +1,7 @@
 package com.android.twistedcolors;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -9,17 +11,21 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.android.twistedcolors.sequence;
+
 public class main extends Activity {
-    /** Called when the activity is first created. */
+
+    
+	/** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
         // Capture the red button from layout
-        ImageButton imageButtonRed = (ImageButton)findViewById(R.id.ImageButtonRed);
+        Button buttonRed = (Button)findViewById(R.id.ButtonRed);
         // Register the onClick listener with the implementation above
-        imageButtonRed.setOnClickListener(readInput);
+        buttonRed.setOnClickListener(readInput);
         
        
         
@@ -37,6 +43,11 @@ public class main extends Activity {
         	toast.show();	
         }
     };
+    
+    
+    private void displaySequence() {
+    	
+    }
 
     
 }
